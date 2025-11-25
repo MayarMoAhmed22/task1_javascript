@@ -183,7 +183,7 @@ let q = "The quick brown fox";
     console.log(element)
     })
 
-  for---of--> used to iterate through array  of element not index but if you want it's index you can use for---in instead  
+  for---of--> used to iterate through array or object or collection of element not index but if you want it's index you can use for---in instead  
 
 
  //question 2
@@ -229,7 +229,7 @@ example 5 == "5" ==> false
 //question 4
 
 بنجرب الكود لو حصل اى مشكلة بستقبله فى catch فى اى parameter
-
+                 wa mash bay7sl crash fy server wa ba2et haga bate4t8l
 example 
 
 try{
@@ -238,7 +238,6 @@ console.log(x)
 }catch(habozo){
 alert(habozo);
 }
- and it is important because asyn function for functions that need time to execute 
 
 
  //question 5
