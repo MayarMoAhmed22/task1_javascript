@@ -1,9 +1,10 @@
 // Part 1
 // question 1
-let x = "123";
-let y = Number("123");
-let z = y + 7;
-// console.log(z);   //output : 130
+function sumNum(x) {
+  let z = x + 7;
+  return z;
+}
+// console.log(sumNum(Number("123")));
 
 // question 2
 function checkFalsy(n) {
@@ -17,63 +18,80 @@ let val = checkFalsy("lolo");
 // console.log(val);
 
 // question 3
-let num = "";
-for (let i = 1; i <= 10; i++) {
-  if (i % 2 === 0) {
-    continue;
+function conNum() {
+  let num = "";
+  for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+      continue;
+    }
+    num += i;
   }
-  num += i;
+  return num;
 }
-// console.log(num);    // 1,3,5,7,9
+
+//  console.log(conNum());    // 1,3,5,7,9
 
 // question 4
-
+function filtNumber(n) {
+  const res = n.filter((e) => e % 2 === 0);
+  return res;
+}
 let n = [1, 2, 3, 4, 5];
-const res = n.filter((e) => e % 2 === 0);
-// console.log(res);     //[2,4]
+
+// console.log(filtNumber(n)); //[2,4]
 
 // question 5
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
-let result = [...arr1, ...arr2];
-// console.log(result);   //[1,2,3,4,5,6]
+function merageNum(num1, num2) {
+  let result = [...num1, ...num2];
+  return result;
+}
+
+//  console.log(merageNum([1,3,4,5,6] ,[6,7,8,9,0]));
 
 // question 6
 function dayName(k) {
   switch (k) {
     case 1:
-      return "Sunday";
+      console.log("Sunday");
+      break;
 
     case 2:
-      return "Monday";
+      console.log("Monday");
+      break;
 
     case 3:
-      return "tuesday";
-
+      console.log("tuesday");
+      break;
     case 4:
-      return "wednesday";
+      console.log("wednesday");
+      break;
 
     case 5:
-      return "thursday";
+      console.log("thursday");
+      break;
 
     case 6:
-      return "friday";
+      console.log("friday");
+      break;
 
     case 7:
-      return "Saturday";
+      console.log("Saturday");
+      break;
 
     default:
-      return "NOT A DAY";
+      console.log("NOT A DAY");
   }
 }
-let res1 = dayName(1);
-// console.log(res1); // Sunday
+dayName(1); // Sunday
 
 // question 7
-
+function mapNum(n) {
+  let resu = l.map((e) => e.length);
+  return resu;
+}
 let l = ["a", "ab", "abc"];
-let resu = l.map((e) => e.length);
-// console.log(resu);  //[1,2,3]
+
+//  console.log(mapNum(l));  //[1,2,3]
 
 //question 8
 
@@ -171,9 +189,7 @@ function spNum(n) {
 let q = "The quick brown fox";
 // console.log(spNum(q));
 
-
-
-// B Part 2 
+// B Part 2
 
 /*
   //question 1
